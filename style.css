@@ -1,4 +1,10 @@
 
+    :root {
+        --bg: #ffffff;
+
+        --global-font: 'Outfit';
+    }
+
 .name{
     font-weight: 400;
 }
@@ -6,12 +12,37 @@
 .menu {
     display:flex;
     justify-content: space-between;
-    margin: 0 auto;
     width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
     padding-bottom: 30px;
     margin-bottom: 100px;
     font-family: "Outfit";
+    align-items: center;
 }
+
+.hero-image img {
+    height: 30px;
+    width: 30px;
+}
+.shop img{
+    height: 30px;
+    width: 30px;
+}
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.burger img{
+    height: 30px;
+    width: 30px;
+}
+.burger {
+    margin-right: 30px;
+}
+
 .all-text {
     display: grid;
     justify-content: center;
@@ -52,4 +83,28 @@
     background-color: white;
     color:black;
     border: 1px solid #333
+}
+.fashion {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+    font-family: "Outfit";
+
+}
+.fashion-text {
+    display:grid;
+    justify-content: center;
+}
+.fashion-title {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: 400;
+}
+.fashion-subtitle {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 400;
 }

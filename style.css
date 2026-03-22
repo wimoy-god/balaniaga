@@ -49,10 +49,10 @@
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    padding-top: 30px;
-    margin-top: 250px;
+    max-width: 500px;
+    padding: 20px;
     font-family: "Outfit";
-    width: 500px;
+    box-sizing: border-box;
 }
 
 .all-text h3 {
@@ -71,7 +71,7 @@
 }
 .COLLECTION {
     margin-right:  10px;
-    padding: 10px 15px;
+    padding: 15px 20px;
     background-color: black;
     color:white;
     
@@ -79,10 +79,19 @@
 
 .learn {
     margin-left:10px;
-    padding: 10px 15px;
+    padding: 15px 20px;
     background-color: white;
     color:black;
     border: 1px solid #333
+}
+.hero-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .fashion {
     width: 100%;
@@ -106,5 +115,141 @@
 .fashion-subtitle {
     font-size: 16px;
     margin: 0;
+    font-weight: 300;
+}
+.spring-contain-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+}
+.spring-contain {
+    flex-shrink: 0;
+}
+.spring {
+    font-size: 55px;
+    font-weight:200;
+    margin-bottom: 16px;
+}
+.spring-text {
+    font-size: 16px;
+    font-weight: 300;
+}
+.spring-button {
+    margin-top: 16px;
+    font-size: 16px;
+    padding: 20px 25px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    border: 1px solid #333;
+}
+.spring-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 0;
+}
+.spring-img img {
+    width: 60%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+.best-sellers {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+    font-family: "Outfit";
+    box-sizing: border-box;
+}
+.best-sellers-contain {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+.best-sellers-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 64px;
+    flex-wrap: wrap;
+}
+.best-sellers-title {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
     font-weight: 400;
+}
+.best-sellers-subtitle {
+    display: flex;
+    justify-content: center;    
+    font-size: 16px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.best-sellers-cards {
+    flex: 1 1 0;
+    min-width: 0;
+}
+.best-sellers-cards img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.product-info {
+    padding-top: 16px;
+    text-align: left;
+}
+.product-category {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    color: #999;
+    margin-bottom: 4px;
+}
+.product-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    margin: 0 0 4px 0;
+}
+.product-price {
+    font-size: 14px;
+    font-weight: 300;
+    color: #999;
+}
+
+@media (max-width: 1100px) {
+    .best-sellers-cards {
+        flex: 1 1 calc(50% - 15px);
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .best-sellers-cards {
+        flex: 1 1 100%;
+    }
+    .all-text h2 {
+        font-size: 36px;
+    }
+    .all-text h3 {
+        font-size: 14px;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .links button {
+        margin: 0 !important;
+        width: 100%;
+        max-width: 220px;
+    }
 }

@@ -224,6 +224,17 @@
     color: #999;
 }
 
+.view-all {
+    display: flex;
+    margin: 30px auto 0 auto;
+    padding: 15px 25px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    border: 1px solid #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 @media (max-width: 1100px) {
     .best-sellers-cards {
         flex: 1 1 calc(50% - 15px);
@@ -252,4 +263,119 @@
         width: 100%;
         max-width: 220px;
     }
+}
+
+.crafted {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto 100px;
+    padding: 0 20px 30px;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+.crafted-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.crafted-text {
+    flex: 1;
+    max-width: 520px;
+}
+
+.crafted-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.crafted-img img {
+    width: 73%;
+    height: auto;
+    display: block;
+}
+
+.crafted-img {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.crafted-title {
+    font-size: 40px;
+    font-weight: 400;
+    color: #333;
+    margin: 0 0 4px 0;
+}
+.crafted-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.crafted-button {
+    max-width: 250px;
+    margin-top: 16px;
+    color: #333;
+    font-size: 16px;
+    padding: 20px 25px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    border: 1px solid #333;
+}
+.stay {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px 30px;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+.stay-content {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.stay-title {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.stay-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.stay-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.stay-input input {
+    width: 30%;
+    padding: 15px 20px;
+    border: 1px solid #333;
+    
+}
+.stay-button {
+    padding: 15px 25px;
+    border: 1px solid #333;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.stay-policy {
+    font-size: 14px;
+    font-weight: 300;
+    color: #999;
+    margin-top: 20px;
 }
